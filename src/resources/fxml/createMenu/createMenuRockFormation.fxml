@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="myApp.controller.CreateMenu.CreateMenuRockFormation">
+   <children>
+      <VBox prefHeight="50.0" prefWidth="508.0" spacing="5.0">
+         <children>
+            <HBox>
+               <children>
+                  <Label text="Area" />
+                  <Region prefHeight="18.0" prefWidth="268.0" />
+                  <Label text="Date of creation" />
+               </children>
+            </HBox>
+            <HBox prefHeight="19.0" prefWidth="482.0">
+               <children>
+                  <TextField prefHeight="26.0" prefWidth="250.0" promptText="(area &gt;0)" />
+                  <Region prefHeight="16.0" prefWidth="200.0" />
+                  <DatePicker prefHeight="26.0" prefWidth="298.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

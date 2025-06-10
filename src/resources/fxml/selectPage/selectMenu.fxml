@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="myApp.controller.selectPage.SelectMenu">
+   <children>
+      <BorderPane layoutX="-1.0" layoutY="-2.0" prefHeight="400.0" prefWidth="576.0">
+         <left>
+            <VBox alignment="TOP_CENTER" prefHeight="379.0" prefWidth="232.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label text="Information" />
+                  <Region prefHeight="25.0" prefWidth="278.0" />
+                  <HBox prefHeight="2.0" prefWidth="278.0">
+                     <children>
+                        <Label text="Name" />
+                        <Region prefHeight="18.0" prefWidth="16.0" />
+                        <Label fx:id="errorNameLabel" />
+                     </children>
+                  </HBox>
+                  <TextField fx:id="nameAttraction" />
+                  <Region prefHeight="26.0" prefWidth="278.0" />
+                  <HBox prefHeight="2.0" prefWidth="278.0">
+                     <children>
+                        <Label text="Region" />
+                        <Region prefHeight="18.0" prefWidth="16.0" />
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <ComboBox fx:id="regionForAttraction" prefHeight="26.0" prefWidth="144.0" promptText="- Select -" />
+                     </children>
+                  </HBox>
+                  <Region prefHeight="26.0" prefWidth="278.0" />
+                  <HBox prefHeight="2.0" prefWidth="278.0">
+                     <children>
+                        <Label text="Type" />
+                        <Region prefHeight="18.0" prefWidth="16.0" />
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <ComboBox fx:id="typeAttraction" prefHeight="26.0" prefWidth="144.0" promptText="- Select -" />
+                     </children>
+                  </HBox>
+                  <Region prefHeight="60.0" prefWidth="278.0" />
+                  <Button mnemonicParsing="false" onAction="#searchForAttractions" prefHeight="24.0" prefWidth="122.0" text="Search" />
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </BorderPane.margin>
+            </VBox>
+         </left>
+         <right>
+            <TableView fx:id="tableForData" prefHeight="360.0" prefWidth="304.0" BorderPane.alignment="CENTER">
+              <columns>
+                  <TableColumn fx:id="TableColumnName" prefWidth="194.39996033906937" text="Name" />
+              </columns>
+               <BorderPane.margin>
+                  <Insets bottom="20.0" left="20.0" top="20.0" />
+               </BorderPane.margin>
+            </TableView>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>

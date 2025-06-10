@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="150.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="myApp.controller.CreateMenu.CreateMenuCave">
+   <children>
+      <VBox prefHeight="159.0" prefWidth="508.0" spacing="5.0">
+         <children>
+            <HBox>
+               <children>
+                  <Label text="Depth" />
+                  <Region prefHeight="18.0" prefWidth="246.0" />
+                  <Label text="Height" />
+               </children>
+            </HBox>
+            <HBox prefHeight="19.0" prefWidth="482.0">
+               <children>
+                  <TextField prefHeight="26.0" prefWidth="250.0" promptText="(depth &gt;0)" />
+                  <Region prefHeight="16.0" prefWidth="200.0" />
+                  <TextField prefHeight="26.0" prefWidth="313.0" promptText="(height &gt; 0)" />
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label text="Humidity (in percent)" />
+                  <Region prefHeight="18.0" prefWidth="165.0" />
+                  <Label prefHeight="18.0" prefWidth="78.0" text="Temperature" />
+               </children>
+            </HBox>
+            <HBox prefHeight="27.0" prefWidth="482.0">
+               <children>
+                  <TextField prefHeight="26.0" prefWidth="250.0" promptText="(0 &lt; humidity &lt; 100)" />
+                  <Region prefHeight="16.0" prefWidth="200.0" />
+                  <TextField prefHeight="26.0" prefWidth="310.0" promptText="Example: -18" />
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label prefHeight="18.0" prefWidth="102.0" text="Date of discovary" />
+                  <Region prefHeight="18.0" prefWidth="177.0" />
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <DatePicker prefHeight="26.0" prefWidth="150.0" promptText="5/6/2025" />
+                  <Region prefHeight="26.0" prefWidth="115.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

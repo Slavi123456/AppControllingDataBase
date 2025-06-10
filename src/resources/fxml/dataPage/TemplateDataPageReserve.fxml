@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="myApp.controller.DataPage.TemplateDataPageReserve">
+   <children>
+      <GridPane prefHeight="420.0" prefWidth="620.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="360.79998779296875" minWidth="10.0" prefWidth="356.79998779296875" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.20001220703125" minWidth="10.0" prefWidth="243.20001220703125" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="128.60001220703126" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="266.8" minHeight="10.0" prefHeight="266.8" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label fx:id="reserveName" text="Name" GridPane.columnSpan="2" GridPane.halignment="CENTER" />
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <children>
+                  <Label text="Information" />
+                  <Region prefHeight="20.0" prefWidth="300.0" />
+                  <HBox alignment="CENTER_LEFT" prefHeight="34.0" prefWidth="300.0">
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label text="Area" />
+                        <Region prefHeight="34.0" prefWidth="30.0" />
+                        <Label fx:id="reserveArea" text="information" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="34.0" prefWidth="300.0">
+                     <children>
+                        <Label text="Date of discovery:" />
+                        <Region prefHeight="34.0" prefWidth="30.0" />
+                        <Label fx:id="reserve_date_of_discovary" text="information" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER_RIGHT" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <HBox prefHeight="30.0" prefWidth="300.0">
+                     <children>
+                        <Region prefHeight="26.0" prefWidth="171.0" />
+                        <Button mnemonicParsing="false" onAction="#bttnForEdit" prefHeight="26.0" prefWidth="62.0" text="Edit" />
+                     </children>
+                  </HBox>
+                  <Region prefHeight="49.0" prefWidth="300.0" />
+                  <ImageView fx:id="imgOfPlant" fitHeight="225.0" fitWidth="171.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/LiliumCandidum.jpg" />
+                     </image>
+                     <VBox.margin>
+                        <Insets right="30.0" />
+                     </VBox.margin>
+                  </ImageView>
+               </children>
+            </VBox>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

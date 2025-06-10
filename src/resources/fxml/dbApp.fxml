@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="myApp.controller.DbAppController">
+   <children>
+      <BorderPane layoutX="-1.0" prefHeight="400.0" prefWidth="600.0">
+         <top>
+            <VBox alignment="CENTER" prefHeight="40.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="40.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#bttnHome" text="Home" />
+                        <Button mnemonicParsing="false" onAction="#bttnCreate" text="Create" />
+                        <Button mnemonicParsing="false" onAction="#bttnSearch" text="Search" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </top>
+         <center>
+            <StackPane fx:id="menuPane" prefHeight="401.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
