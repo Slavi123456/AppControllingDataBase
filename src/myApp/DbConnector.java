@@ -40,7 +40,7 @@ public class DbConnector {
 
         try {
 
-            //missing the getting the connection from the Driver
+            /////missing the getting the connection from the Driver
 
             statement = connection.createStatement();
 
