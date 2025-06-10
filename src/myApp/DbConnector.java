@@ -40,7 +40,7 @@ public class DbConnector {
 
         try {
 
-            connection = DriverManager.getConnection("jdbc:db2://62.44.108.24:50000/SAMPLE:currentSchema=FN1MI0700208;", "db2admin", "db2admin");
+            //missing the getting the connection from the Driver
 
             statement = connection.createStatement();
 
