@@ -5,11 +5,11 @@ The data base is about "Bulgarian natural attraction" which are
 defined by their type: "Plant, Cave, Rock formation, Swamp and Reserve"
 and their region. Also every type of data has it's own added fields.
 
-About missing parts:
+About missing parts:  
  -Inserting new data for specific table\
  -Editing existing one thorugh the "Edit" button
 
- =============================================================================  
+ ===========================================================================  
  
  ![Main menu](src/assets/mainMenu.png)
 
