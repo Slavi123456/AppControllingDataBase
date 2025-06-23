@@ -9,19 +9,12 @@ About missing parts:
  -Inserting new data for specific table\
  -Editing existing one thorugh the "Edit" button
 
- =============================================================================
- Photos for the app
-
- Main menu
- ![](src/assets/mainMenu.png)
-
+ =============================================================================  
  
- Insert menu
- ![](src/assets/create-insertMenu.png)
+ ![Main menu](src/assets/mainMenu.png)
 
- 
- Search menu
- ![](src/assets/searchMenu.png)
+ ![Insert menu](src/assets/create-insertMenu.png)
 
- Data menu
- ![](src/assets/dataMenu.png)
+ ![Search menu](src/assets/searchMenu.png)
+
+ ![Data menu](src/assets/dataMenu.png)
