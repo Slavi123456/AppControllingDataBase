@@ -3,12 +3,10 @@ package myApp;
 import com.ibm.db2.jcc.am.SqlIntegrityConstraintViolationException;
 import myApp.utils.dataTypes.*;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
+import java.time.LocalDate;
 import java.util.ArrayList;
+
 import java.util.List;
 
 //copied class from the lecture
@@ -40,8 +38,8 @@ public class DbConnector {
 
         try {
 
-            /////missing the getting the connection from the Driver
-
+            //missing the the line for connection:
+            //connection = Drivermanager.getConnection(url,user,password);
             statement = connection.createStatement();
 
         }
@@ -128,13 +126,16 @@ public class DbConnector {
                         );
                         break;
                     case "CAVE":
+                        Date sqlDate = rs.getDate("date_of_discovery");
+                        LocalDate localDate = (sqlDate != null) ? sqlDate.toLocalDate() : null;
+
                         data = new DataCave(        "",
                                 rs.getString("name"),
                                 rs.getInt("cave_longitude"),
                                 rs.getInt("elevation"),
                                 rs.getInt("humidity"),
                                 rs.getInt("temperature"),
-                                rs.getDate("date_of_discovery").toLocalDate()
+                                localDate
                         );
                         break;
                     default:

@@ -43,6 +43,7 @@ public class DataCave extends DataBase {
     }
 
     public void setDate_of_discovary(LocalDate date_of_discovary) {
+        System.out.printf("Date of discovery: %s\n", date_of_discovary);
         if (date_of_discovary == null) { this.date_of_discovary = LocalDate.now(); }
         else { this.date_of_discovary = date_of_discovary; }
     }
